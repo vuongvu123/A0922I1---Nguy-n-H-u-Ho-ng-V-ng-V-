@@ -2,27 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bảng đơn giản</title>
+    <style>
+        label {
+            color: blue;
+        }
+        body{
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+
+            background: aliceblue;
+        }
+        table{border: 10px solid white}
+    </style>
 </head>
 <body>
-<hr width="50%">
-<p>
-    XUANTHULAB.NET là blog cá nhân,
-    chia sẻ những kiến thức
-    công nghệ thông tin từ sử dụdz
-    các ứng dụng đến lập trình.
-</p>
-<hr>
-<p>
-    Nội dung của blog
-    là kiến thức tôi học được,
-    xuất bản tại đây
-    như là cách ghi chú
-    để đọc lại khi cần.
-</p>
-<hr width="50%"
-    color="red"
-    align="right"
-    size="5px">
+<table bgcolor="white">
+    <form action="123.com.vn" method="get">
+        <tr>
+            <th bgcolor="#ff4500" colspan="2"; style="font-size: 32px; ">Sở thích của bạn </th>
+        </tr>
+        <tr>
+            <td ><label> Họ và tên: </label></td>
+            <td >
+                <input type="text" name="ten" placeholder="Nhập tên vào đây">
+            </td>
+        </tr>
+        <tr>
+            <td><label> Email:</label></td>
+            <td >
+                <input type="email" name="mail" placeholder="Nhập mail vào đây">
+            </td>
+        </tr>
+        <tr>
+            <td style="color: blue"> Sở thích</td>
+            <td>
+                <input type="checkbox" name=" sở thích" > thể thao
+                <input type="checkbox" name=" sở thích" > âm nhạc
+                <input type="checkbox" name=" sở thích" > đọc sách
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="checkbox" name=" sở thích" > lướt web
+                <input type="checkbox" name=" sở thích" > chơi game
+                <input type="checkbox" name=" sở thích" > điện ảnh
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="checkbox" name=" sở thích" > du lịch
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="gửi thông tin">
+                <input type="reset" value="nhập lại">
+            </td>
+        </tr>
+    </form>
+</table>
 </body>
 </html>

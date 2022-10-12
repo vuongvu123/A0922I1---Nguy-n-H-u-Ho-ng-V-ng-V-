@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        label {
+            color: blue
+        }
+        body {
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+
+            background: PaleGoldenRod;
+        }
+    </style>
+</head>
+<body>
+<table bgcolor="PaleGoldenRod">
+ <form action="https://www.google.com/" method="get">
+     <tr>
+         <th bgcolor="#ADD8E6" colspan="30px";> <label> đăng ký học viên </label></th>
+     </tr>
+     <tr>
+         <th><label> họ và tên</label></th>
+         <td>
+            <input type="text"; name="tên" placeholder="nhập tên vào đây">
+         </td>
+     </tr>
+     <tr>
+         <th><label> ngày sinh</label></th>
+         <td>
+             <input type="date";name="ngày" >
+         </td>
+     </tr>
+     <tr>
+         <th><label>giới tính </label></th>
+         <td>
+             <input type="checkbox"; name="giới tính">nam
+             <input type="checkbox";name="giới tính">nữ
+         </td>
+     </tr>
+     <tr>
+         <th><label>địa chỉ</label></th>
+         <td>
+             <input rowspan="3" type="text";name="địa chỉ">
+         </td>
+     </tr>
+     <tr>
+         <th ><label> lớp </label></th>
+         <td >
+             <select >
+                 <option><p>chọn lớp</p></option>
+                 <option >12.3</option>
+                 <option >12.4</option>
+                 <option >12.5</option>
+             </select>
+         </td>
+     </tr>
+     <tr>
+         <th><label>Email</label></th>
+         <td>
+             <input type="email";name="email">
+         </td>
+     </tr>
+     <tr>
+         <th><label>điện thoại</label></th>
+         <td>
+             <input type="number";name="số điện thoại">
+         </td>
+     </tr>
+     <tr>
+         <td></td>
+         <td>
+             <input type="submit"; name="đăng ký" placeholder="đăng ký">
+             <input type="reset"; name="nhập lại" placeholder="nhâp lại">
+         </td>
+     </tr>
+ </form>
+</table>
+</body>
+</html>
