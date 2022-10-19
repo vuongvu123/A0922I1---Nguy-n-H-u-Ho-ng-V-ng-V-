@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <p><b>Amount</b></p>
+    <input id="amount" type="text" size="10">
+    <p><b> form currency</b></p>
+    <select id="from">
+        <option value="VND" selected>VietNam</option>
+        <option value="USD">My</option>
+        <option value="Euro">Euro</option>
+    </select><br>
+    <p><b>To currency</b></p>
+    <select id="to">
+        <option value="VND" selected>VND</option>
+        <option value="USD">My</option>
+        <option value="Euro">Euro</option>
+    </select> <br><br>
+    <button type="button" onclick="chuyendoi()">Convert</button> <br>
+    <label> Result: <span id="KQ"></span></label>
+</form>
+</body>
+</html>
+<script>
+    function chuyendoi() {
+        var a= +document.getElementById("amount").value;
+        var b= document.getElementById("from").value;
+        var c= document.getElementById("to").value;
+        if ( b =="VND"){
+            if(c =="VND"){
+                document.getElementById("KQ").textContent=a;
+            }
+            else{
+                if(c =="USD"){
+                    let giatri= a/23000;
+                    document.getElementById("KQ").textContent=giatri;
+                }
+                else {
+                    let giatri=a/25000;
+                    document.getElementById("KQ").textContent=giatri;
+                }
+            }
+        }
+        if (b =="USD"){
+            if(c =="VND"){
+                let giatri= a * 23000;
+                document.getElementById("KQ").textContent =giatri;
+            }
+            else{
+                if(c =="USD"){
+                    document.getElementById("KQ").textContent = a;
+                }
+                else {
+                    let giatri=(a * 23000)/25000;
+                    document.getElementById("KQ").textContent=giatri;
+                }
+            }
+        }
+        if (b =="Euro"){
+            if(c =="VND"){
+                let giatri= a * 25000;
+                document.getElementById("KQ").textContent =giatri;
+            }
+            else{
+                if(c=="USD"){
+                    let giatri=(a * 25000)/23000;
+                    document.getElementById("KQ").textContent = giatri;
+                }
+                else {
+                    document.getElementById("KQ").textContent= a;
+                }
+            }
+        }
+    }
+</script>
