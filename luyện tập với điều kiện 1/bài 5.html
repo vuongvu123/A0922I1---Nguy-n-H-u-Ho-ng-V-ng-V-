@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+    var a=+prompt("nhập vào điểm bài kiểm tra");
+    var b=+prompt("nhập vào điểm thi giữa kì");
+    var c=+prompt("nhập vào điểm thi cuối kì ");
+    if(a>=0 && b>=0 && c>=0 && a<=10 && b<=10 && c<=10){
+        var average=(a+b*2+c*3)/6;
+    }
+    else average="Nhập điểm sai. Vui lòng nhập lại";
+    document.write(average);
+</script>
