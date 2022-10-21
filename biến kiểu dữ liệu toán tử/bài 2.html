@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <b> Độ C</b>
+    <input type="text" id="C" size="10" placeholder="Nhập vào Độ C"><br>
+    <button type="button" onclick="chuyendoi()"> Convert độ F</button> <br>
+    <label>Result <span id="KQ"></span></label>
+</form>
+</body>
+</html>
+<script>
+    function chuyendoi(){
+        var a=+document.getElementById("C").value;
+        let giatri= (9*a)/5 +32;
+        document.getElementById("KQ").textContent=giatri;
+    }
+</script>

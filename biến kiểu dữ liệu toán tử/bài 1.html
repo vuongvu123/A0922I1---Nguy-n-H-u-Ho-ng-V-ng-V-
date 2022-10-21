@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <b> Vật lý </b>
+    <input type="text" id="ly" size="20" placeholder="Nhập vào điểm Lý"> <br>
+    <b> Hóa Học</b>
+    <input type="text" id="hoa" size="20" placeholder="Nhập vào điểm Hóa"><br>
+    <b> Sinh học</b>
+    <input type="text" id="sinh" size="20" placeholder="Nhập vào điểm Sinh"><br>
+    <button type="button" onclick="average()">average</button><br>
+    <label>  Average Result: <span id="ketqua"></span></label><br>
+    <button type="button" onclick="total()">Total</button> <br>
+    <label> Total Result: <span id="kq"></span></label><br>
+</form>
+</body>
+</html>
+<script>
+    function average(){
+        var a= +document.getElementById("ly").value;
+        var b= +document.getElementById("hoa").value;
+        var c= +document.getElementById("sinh").value;
+        if(a<0 || a>10 || b<0 || b>10 ||c<0 || c>10){
+            var giatri="Điếm sai. Vui Lòng nhập lại";
+        }
+        else{
+            var giatri=(a+b+c)/3;
+        }
+        document.getElementById("ketqua").textContent=giatri;
+    }
+    function total(){
+        var a= +document.getElementById("ly").value;
+        var b= +document.getElementById("hoa").value;
+        var c= +document.getElementById("sinh").value;
+        if(a<0 || a>10 || b<0 || b>10 ||c<0 || c>10){
+            var giatri="Điếm sai. Vui Lòng nhập lại";
+        }
+        else{
+            var giatri=a+b+c;
+        }
+        document.getElementById("kq").textContent=giatri;
+    }
+</script>

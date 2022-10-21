@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <b>Bán kính hình tròn</b>
+    <input type="text" id="r" size="20" placeholder="nhập vào bán kính"><br>
+    <button type="button" onclick="dienTich()"> Count </button><br>
+    <label>Result: <span id="KQ"></span></label><br>
+</form>
+</body>
+</html>
+<script>
+    function dienTich(){
+        const pi=3.14;
+        var a=+document.getElementById("r").value;
+        if (a<=0){
+            var giatri="Nhập bán kính sai.Vui Lòng nhập lai";
+        }
+        else{
+            var giatri=a*a*pi;
+        }
+        document.getElementById("KQ").textContent=giatri;
+    }
+</script>
