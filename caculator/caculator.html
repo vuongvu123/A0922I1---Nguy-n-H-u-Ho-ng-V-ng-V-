@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" id='frist'><br>
+    <input type="text" id="second"><br>
+    <button type="button"  id ="add" onclick="cong()" >Addition(+)</button>
+    <button type="button" id="sub" onclick="tru()" >Subtraction(-)</button>
+    <button type="button" id="mul" onclick="nhan()" >Multiplication(x)</button>
+    <button type="button"  id="div" onclick="chia()" >Division(/)</button> <br>
+
+    <label>Result: <span id="KQ"></span></label>
+</form>
+</body>
+</html>
+<script>
+    function cong() {
+        var a =+document.getElementById("frist").value;
+        var b= +document.getElementById("second").value;
+        let giatri=a+b;
+        document.getElementById("KQ").textContent=giatri;
+    }
+    function tru() {
+        var a =+document.getElementById("frist").value;
+        var b= +document.getElementById("second").value;
+        let giatri=a-b;
+        document.getElementById("KQ").textContent=giatri;
+    }
+    function nhan() {
+        var a =+document.getElementById("frist").value;
+        var b= +document.getElementById("second").value;
+        let giatri=a*b;
+        document.getElementById("KQ").textContent=giatri;
+    }
+    function chia() {
+        var a =+document.getElementById("frist").value;
+        var b= +document.getElementById("second").value;
+        let giatri=a/b;
+        document.getElementById("KQ").textContent=giatri;
+    }
+
+
+</script>

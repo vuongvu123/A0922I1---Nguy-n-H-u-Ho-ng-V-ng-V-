@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id='frist'><br>
+<input type="text" id="second"><br>
+<button type="button"  id ="add" onclick="chuyendoi(add)" >Addition(+)</button>
+<button type="button" id="sub" onclick="chuyendoi(sub)" >Subtraction(-)</button>
+<button type="button" id="mul" onclick="chuyendoi(mul)" >Multiplication(x)</button>
+<button type="button"  id="div" onclick="chuyendoi(div)" >Division(/)</button> <br>
+
+<label>Result: <span id="KQ"></span></label>
+</body>
+</html>
+<script>
+    function chuyendoi(abc){
+        var a =+document.getElementById("frist").value;
+        var b= +document.getElementById("second").value;
+        if (abc == add){
+            var c=1;
+        }
+        else {
+            if(abc == sub){
+                c=2;
+            }
+            else{
+                if (abc == mul){
+                    c=3;
+                }
+                else c=4;
+            }
+        }
+        switch(c){
+            case 1:
+                var giatri=a+b;
+                break;
+            case 2:
+                giatri=a-b;
+                break;
+            case 3:
+                giatri=a*b;
+                break;
+            case 4:
+                giatri=a/b;
+                break;
+        }
+        document.getElementById("KQ").textContent=giatri;
+    }
+</script>
