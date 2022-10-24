@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <button type="button" onclick="nhap()">Chơi</button><br>
+
+</form>
+</body>
+</html>
+<script>
+    function nhap(){
+        var a=+prompt("Nhập số đầu");
+        var b=+prompt("nhập số cuối")
+        var x=+prompt("Nhập số bạn dự đoán vào");
+        var random=randomInRange(a,b);
+        var check=0;
+        while(check<3){
+            if(x==random){
+                document.write("Chúc mừng");
+                break;
+            }
+            check++;
+        }
+
+    }
+
+    function randomInRange(start,end){
+        return Math.floor(Math.random() * (end - start + 1) + start);
+    }
+</script>

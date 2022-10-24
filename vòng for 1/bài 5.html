@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    var value=1;
+    let f1=1,f2=1,n=0,i=3;
+    document.write(f1 +"<br>");
+    document.write(f2 +"<br>");
+    while(n<19 && i>=3){
+        let f=f1+f2;
+        document.write(f +"<br>");
+        f1=f2;
+        f2=f;
+        value +=f;
+        i++;
+        n++;
+    }
+    document.write("Tổng 20 số đầu tiên dãy filorain " +value );
+</script>
