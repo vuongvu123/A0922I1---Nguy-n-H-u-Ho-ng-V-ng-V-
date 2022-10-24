@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function check_real_leteger_number( n){
+        //flag = 1 => số nguyên
+        //flag = 0 => số thực
+
+        let flag = 1;
+        if (Math.ceil(n) != Math.floor(n)) flag = 0;
+        return flag;
+    }
+    var age=+prompt("nhập vào tuổi");
+    let check=check_real_leteger_number(age);
+    if (check == 1) {
+        if(age<120 && age>0){
+            document.write("Tuổi của người đó là " + age)
+        }
+        else document.write( age +"Không phải là tuổi ")
+    }
+    else{
+        document.write("Vui lòng nhập số nguyên");
+    }
+</script>

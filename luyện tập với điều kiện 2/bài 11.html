@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    var a=+prompt( "nhập vào thu nhập của bạn")
+    if(a<0)
+        document.write("bạn nhập sai.Vui lòng nhập lại")
+    else {
+        if(a<=5000000){
+            var value=a*5/100;
+        }else if(a<=10000000){
+            value=a*10/100-0.25*1000000;
+        }else if(a<=18000000){
+            value=a*15/100-0.75*1000000;
+        }else if(a<=32000000){
+            value=a*20/100-1.65*1000000;
+        }else if(a<=52000000){
+            value=a*25/100-3.25*1000000;
+        }else if(a<=80000000){
+            value=a*30/100-5.85*1000000;
+        }else value=a*35/100-9.85*1000000;
+        document.write(value);
+    }
+</script>

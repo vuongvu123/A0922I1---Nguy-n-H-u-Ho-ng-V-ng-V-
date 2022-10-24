@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    var a=+prompt( "nhập vào số chỉ điện bạn sử dụng")
+    if(a<0)
+        document.write("bạn nhập sai.Vui lòng nhập lại")
+    else {
+        if(a<=50){
+            var value=a*1.658;
+        }else if(a<=100){
+            value=a*1.734;
+        }else if(a<=200){
+            value=a*2.014;
+        }else if(a<=300){
+            value=a*2.536;
+        }else if(a<=400){
+            value=a*2.834;
+        }else value=a*2.937;
+        document.write(value);
+    }
+</script>
