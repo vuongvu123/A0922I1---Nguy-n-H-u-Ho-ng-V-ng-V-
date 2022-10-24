@@ -8,3 +8,20 @@
 
 </body>
 </html>
+<script>
+ var a= +prompt("Nhập vào số tiền ban đầu");
+ var b= +prompt("Nhập vào số tháng cho vay");
+ var c=+prompt("Nhập vào lãi suất của ngân hàng theo năm ");
+ if(a<=0 && b<=0 && c<0){
+     document.write("Nhập sai");
+ }
+ else{
+    if (c==0){
+        var value =0;
+    }else {
+        let interest=a*(c/12);
+        value=a/b +interest;
+    }
+    document.write(value);
+ }
+</script>
