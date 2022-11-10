@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let arrNumber=[];
+    for (let i = 0; i<10 ; i++) {
+        arrNumber[i]=+prompt("nhap vao phan tu cua mang");
+    }
+    let check=+prompt("phan tu muon kiem tra");
+    let j=0;
+    while(j<10){
+        if(arrNumber[j]==check){
+            document.write("V is in the array");
+            break;
+        }
+        j++;
+    }
+    if(j==10){
+        document.write("V is not in the array");
+    }
+
+
+
+
+</script>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let arrA=new Array(10);
+    let arrB=new Array(10);
+    let arrC=[];
+    for (let i = 0; i <arrA.length ; i++) {
+        arrA[i]= +prompt("nhap vao phan tu cua mang A");
+    }
+    for (let i = 0; i <arrB.length ; i++) {
+        arrB[i]=+prompt("nhap vao phan tu cua mang B");
+    }
+    for (let i = 0; i <arrA.length ; i++) {
+        arrC[i]=arrA[i];
+    }
+    for (let i = 0; i <arrB.length ; i++) {
+        arrC[i+10]=arrB[i];
+    }
+    for (let i = 0; i <arrC.length ; i++) {
+        document.write(arrC[i]+"<br>");
+    }
+</script>

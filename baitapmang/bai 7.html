@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let arrNumber=[];
+    for (let i = 0; i<10 ; i++) {
+        arrNumber[i]=+prompt("nhap vao phan tu cua mang");
+    }
+    let check=+prompt("phan tu muon kiem tra");
+    for (let i = 0; i <10 ; i++) {
+        if(arrNumber[i]==check){
+            arrNumber.splice(i,1);
+            arrNumber.push(0);
+        }
+    }
+    for (let i = 0; i <10 ; i++) {
+        document.write(arrNumber[i]+"<br>")
+    }
+</script>
