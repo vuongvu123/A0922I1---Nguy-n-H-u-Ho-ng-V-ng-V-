@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table id="table" border="1">
+    <tr>
+
+    </tr>
+</table>
+</body>
+</html>
+<script>
+    let table = "<table>";
+    for(var i=2;i<=9;i++){
+        table += "<tr>";
+        for(var j=1;j<=9;j++){
+            table += "<td>"
+            table += i+ "x" +j +"=" + i*j + "<br>";
+            table += "</td>"
+        }
+        table += "</tr>";
+    }
+    document.getElementById("table").innerHTML=table;
+</script>
