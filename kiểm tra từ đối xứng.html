@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let a="rotor";
+    let arr=[];
+    for (let i = 0; i < a.length ; i++) {
+        arr[i]= a.charAt(i);
+    }
+    isPalindrome(a);
+    function isPalindrome(s){
+        let newArr=[];
+        for (let i = 0; i <s.length ; i++) {
+            newArr[i]= s.charAt(s.length-i);
+        }
+        for (let i = 0; i < s.length ; i++) {
+            if(arr[i] !== newArr[i]){
+                document.write("từ không đối xứng");
+                break;
+            }
+        }
+        if(i === s.length ){
+            document.write("từ đối xứng");
+        }
+
+
+    }
+</script>

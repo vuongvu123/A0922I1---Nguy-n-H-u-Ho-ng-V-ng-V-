@@ -17,14 +17,22 @@
         var b=+prompt("nhập số cuối")
         var x=+prompt("Nhập số bạn dự đoán vào");
         var random=randomInRange(a,b);
-        var check=0;
+        var check=1;
         while(check<3){
             if(x==random){
                 document.write("Chúc mừng");
                 break;
+            }else{
+                x=+prompt("Nhập số bạn dự đoán vào");
+                if(check==2){
+                    document.write("Ban da het luot choi ");
+                    break;
+                }
             }
             check++;
+
         }
+
 
     }
 

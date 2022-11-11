@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+    let check=prompt("Nhập vào đại lượng bạn muốn đổi (meters/feet)");
+    let number=+prompt("Nhập vào số bạn muốn đổi");
+    function footToMeter(number){
+        return number * 0.305;
+    }
+    function  meterToFoot(number){
+        return number * 3.279;
+    }
+    function option(check){
+        if(check == "meters"){
+            number = footToMeter(number);
+            document.write("Đổi từ foot sang meter "+ number);
+        }
+        if(check =="feet"){
+            number = meterToFoot(number);
+            document.write("Đổi từ meter sang foot "+ number);
+        }
+    }
+    option(check);
+</script>

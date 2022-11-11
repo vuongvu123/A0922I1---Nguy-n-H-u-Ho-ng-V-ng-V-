@@ -10,17 +10,16 @@
 </html>
 <script>
     var value=1;
-    let f1=1,f2=1,n=0,i=3;
+    let f1=1,f2=1;
+    var n=+prompt("Nhập vào số lượng phần tử fiboacci")
     document.write(f1 +"<br>");
     document.write(f2 +"<br>");
-    while(n<19 && i>=3){
+    for (let i = 3; i <=n ; i++)
+    {
         let f=f1+f2;
         document.write(f +"<br>");
         f1=f2;
         f2=f;
-        value +=f;
-        i++;
-        n++;
     }
-    document.write("Tổng 20 số đầu tiên dãy filorain " +value );
+;
 </script>
